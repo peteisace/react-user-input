@@ -1,0 +1,7 @@
+# npm / yarn stuff
+node_modules/
+yarn-error.log
+yarn.lock
+
+# project stuff
+wwwroot/*
