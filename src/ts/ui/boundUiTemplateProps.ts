@@ -1,4 +1,4 @@
-import SafeString from '../env/safeString'
+import SafeString from './safeString'
 import { HTMLAttributes, ChangeEvent } from 'react';
 import Binding from './binding';
 

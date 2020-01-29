@@ -6,8 +6,9 @@ import {
 } from "strongly-typed-events";
 import ValidationRulesCollection from './validationRulesCollection';
 import PropertyChangedEventArgs from "./propertyChangedEventArgs";
+import IDataErrorInfo from "./IDataErrorInfo";
 
-export default abstract class EditableBase implements INotifyPropertyChanged {
+export default abstract class EditableBase implements INotifyPropertyChanged, IDataErrorInfo {
     private _onPropertyChanged: EventDispatcher<INotifyPropertyChanged, PropertyChangedEventArgs>
          = new EventDispatcher<INotifyPropertyChanged, PropertyChangedEventArgs>();
     private _validationRules: ValidationRulesCollection;
@@ -20,7 +21,7 @@ export default abstract class EditableBase implements INotifyPropertyChanged {
 
     protected abstract addBusinessRules() : void;
 
-    protected get validationRules() : ValidationRulesCollection {
+    protected get validationRules() : ValidationRulesCollection { 
         return this._validationRules;
     }
 

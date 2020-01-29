@@ -25,14 +25,7 @@ export default class BoundUserControl extends React.Component<TemplatedUIProps<B
             this.props.binding.target,
             this.props.binding.targetProperty
         );                
-        // OMFG JAVASCRIPT IS FUCKING STUPID. IT'S A CUNTING PROPERTYDESCRIPTOR, on an Object
-        // WHAT THE ACTUAL FUCK DO U THINK THE VALUE OF THIS WOULD BE????
-        // 
-        // the object who the setter belongs to?
-        // 
-        // NO! OF COURSE NOT. It'll belong to the PropertyDescriptor because that MAKES NO FUCKING
-        // SENSE TO ANYONE DOES IT?
-        // YOU BASTARDS.
+
         this._targetDescriptor.set = this._targetDescriptor.set!.bind(this.props.binding.target);
         this._targetDescriptor.get = this._targetDescriptor.get!.bind(this.props.binding.target);
         // state management.

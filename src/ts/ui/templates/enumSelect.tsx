@@ -1,7 +1,7 @@
 import * as React from 'react'
 import CompositionTemplateProps, { EnumCompositionProps } from './compositionTemplateProps';
 import { BoundUITemplateProps } from '../boundUiTemplateProps';
-import BoundUserControl from '../boundUserControl';
+import BoundUserControl from '../boundUserControl'; 
 import Binding from '../binding';
 
 export const EnumSelect: React.SFC<EnumCompositionProps> = (parentProps) => {

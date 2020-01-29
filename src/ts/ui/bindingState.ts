@@ -1,5 +1,5 @@
-import EditableBase from "../framework/editableBase"
+import IBusinessObject from "../framework/IBusinessObject";
 
 export default interface BindingState {
-    target: EditableBase    
+    target: IBusinessObject
 }
