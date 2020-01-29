@@ -6,9 +6,9 @@ import {
 } from "strongly-typed-events";
 import ValidationRulesCollection from './validationRulesCollection';
 import PropertyChangedEventArgs from "./propertyChangedEventArgs";
-import IDataErrorInfo from "./IDataErrorInfo";
+import IBusinessObject from "./IBusinessObject";
 
-export default abstract class EditableBase implements INotifyPropertyChanged, IDataErrorInfo {
+export default abstract class EditableBase implements IBusinessObject {
     private _onPropertyChanged: EventDispatcher<INotifyPropertyChanged, PropertyChangedEventArgs>
          = new EventDispatcher<INotifyPropertyChanged, PropertyChangedEventArgs>();
     private _validationRules: ValidationRulesCollection;
