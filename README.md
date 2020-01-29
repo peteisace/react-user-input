@@ -5,6 +5,9 @@ To work with the webpack dev server + the coveted HMR, simply run the npm comman
 
 *npm run start*
 
+## Anything Coming? ##
+I do fully intend to build proper package & command so it can be used via npx and not have to go through the boredom of clone, rename, run. Then ofc, you know what they say about intentions... Seriously tho, it's windingg me up so I will do it.
+
 ## Why does this exist?
 It makes life easier for me... The true *create-react-app* does things I don't necessarily want it to (That damn serviceworker for example), doesn't do things I want it to, and probably the biggest driver of all: the hot module replacement just doesn't seem to work properly. Maybe it's me. Maybe it's not. Whatever. I find that it only takes one or two changes and then the HMR gives up / stops working and I don't know why.
 
@@ -98,7 +101,7 @@ Before running it as norm you will need to do the below. After that you can use 
 
 *npm install*
 
-__Previously I've had some problems with babel-loader; if you get some error pertaining to that simply install it again:__
+(Previously I've had some problems with babel-loader; if you get some error pertaining to that simply install it again:)
 
     yarn add babel-loader
 
