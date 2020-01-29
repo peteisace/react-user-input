@@ -89,7 +89,7 @@ if(module.hot) {    // IDEs will often show error here - ensure that @types/webp
 ```
 
 ## How to use it ##
-Up to you really. I intent to fork it for each project where I want it for a base. All that needs changing is the HtmlWebpackPlugin stuff for the title, index.html template, and then the contents of the root component ~/src/core/App.tsx.
+Up to you really. I intent to clone & edit it for each project where I want it for a base. All that needs changing is the HtmlWebpackPlugin stuff for the title, index.html template, and then the contents of the root component ~/src/core/App.tsx.
 
 To work with the webpack dev server + the coveted HMR, simply run the npm command
 
