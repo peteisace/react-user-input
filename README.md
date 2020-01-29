@@ -13,10 +13,8 @@ The key differences are listed below:
 ### Typescript In From Start ###
 Legitimately could be criticized as a disadvantage since there's no option to remove. Again this was created to save me time hence the selfishness! The key things to note here is the dedicated models location: *~/src/ts/[area]* with the thought being to subdivide the folders like java packages - e.g.: ~/src/ts/security/userLoginRequest.ts, ~/src/ts/orders/orderInfo.ts. Similarly regarding the React components the key files are:
 
-*
-    1) Entry point (Invoke ReactDOM.render, push content to React-root div element): ~/src/index.tsx
-    2) Root component (React component that contains all other components - I dislike multiple ReactDOM calls. This is created by the above step: ~/src/core/App.tsx
-*
+* *1) Entry point (Invoke ReactDOM.render, push content to React-root div element): ~/src/index.tsx*
+* *2) Root component (React component that contains all other components - I dislike multiple ReactDOM calls. This is created by the above step: ~/src/core/App.tsx*
 
 ### SASS included and working ###
 I like SASS very much. It helped me get over my fear of CSS. I am quite particular about how I use it and prefer not to have to set it up each and every time. In this simple version the main SASS file **~/src/scss/master.scss** is setup with dependencies on *settings.scss* and Eric Meyer's awesome *reset.scss*, and then imported by the main React component: **~/src/index.tsx**
@@ -37,7 +35,8 @@ For brevity you just need to know that template is configured in the webpack.con
 plugins: [
     new HtmlWebpackPlugin({
         template: './src/index.html',  // location of static template file
-        title: 'Base setup for react projects: Simplified.', // Hardcoded title, can replace with function (that calls API for example for translated text)
+        title: 'Base setup for react projects: Simplified.', // Hardcoded title, can replace 
+        // with function (that calls API for example for translated text)
         inject: true         
     })
 ]
