@@ -13,7 +13,7 @@ module.exports = {
         path: path.resolve(__dirname, 'wwwroot'),
         filename: isDev ? 'scripts/bundle.js' : 'scripts/bundle_[hash].js'
     },
-    watch: true,
+    watch: false,
     resolve: {
         modules: [__dirname, 'src', 'node_modules'],
         extensions: ['*', '.js', '.jsx', '.ts', '.tsx']        

@@ -91,6 +91,25 @@ if(module.hot) {    // IDEs will often show error here - ensure that @types/webp
 ## How to use it ##
 Up to you really. I intent to clone & edit it for each project where I want it for a base. All that needs changing is the HtmlWebpackPlugin stuff for the title, index.html template, and then the contents of the root component ~/src/core/App.tsx.
 
+#### First time pre-reqs ####
+Before running it as norm you will need to do the below. After that you can use normally. 
+
+* Get everything required installed via npm / yarn
+
+*npm install*
+
+__Previously I've had some problems with babel-loader; if you get some error pertaining to that simply install it again:__
+
+    yarn add babel-loader
+
+* You will then need to build, create output via another package.json npm command. I did use to have this do a prod build & webpack watch with this, but tbh more often I just wanted the output & dirs created.
+
+*npm run build*
+
+Now you should have a ~/wwwroot full of content and subdirs. It worked. W00t. We can now run and use as normal.
+
+#### Running it Normally ####
+
 To work with the webpack dev server + the coveted HMR, simply run the npm command
 
 *npm run start*

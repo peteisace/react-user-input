@@ -34,7 +34,7 @@
   },
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --hot --open",
-    "build": "sh cleanup.sh && webpack --config webpack.config.js --mode production",
+    "build": "webpack --config webpack.config.js --mode development",
     "watch": "webpack --config webpack.config.js --mode development --w"
   },
   "dependencies": {
