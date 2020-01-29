@@ -49,18 +49,6 @@ module.exports = {
                     'css-loader',
                     'sass-loader'
                 ]
-            },
-            {
-                test: /\.(woff|woff2|ttf|otf)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: 'fonts/[name].[ext]',
-                            publicPath: url => '../' + url
-                        }
-                    }
-                ]
             }
         ]
     },
